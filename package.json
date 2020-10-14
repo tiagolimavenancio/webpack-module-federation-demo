@@ -1,0 +1,19 @@
+{
+  "name": "webpack-module-federation-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "wsrun --parallel start",
+    "build": "npm workspaces run build",
+    "dev": "wsrun --parallel dev"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
